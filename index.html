@@ -34,6 +34,15 @@
           rgb(249, 223, 138) 100%
         );
       }
+      .hide {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
+      .dotted {
+        border-bottom-style: dotted;
+      }
     </style>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -66,7 +75,17 @@
   <body class="adlam-display">
     <header class="md:w-5/6 md:mx-auto">
       <nav class="">
-        <div class="navbar bg-navc">
+        <div
+          class="lg:hidden border-b-2 border-gray-500 dotted mb-2 flex justify-between"
+        >
+          <img src="c1-assets/logo-header.png" alt="" />
+          <img
+            class="w-10"
+            src="https://img.icons8.com/?size=100&id=1056&format=png"
+            alt=""
+          />
+        </div>
+        <div class="hidden lg:flex navbar bg-navc">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -87,11 +106,11 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow"
               >
-                <li><a>Item 1</a></li>
-                <li><a>Item2</a></li>
-                <li><a>Item 3</a></li>
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
               </ul>
             </div>
             <img src="c1-assets/logo-header.png" alt="" />
@@ -101,12 +120,22 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li><a>Item2</a></li>
-              <li><a>Item 3</a></li>
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
+          <div class="navbar-end gap-3">
+            <img
+              class="w-6"
+              src="https://img.icons8.com/?size=48&id=83026&format=png"
+              alt=""
+            />
+            <img
+              class="w-6"
+              src="https://img.icons8.com/?size=100&id=132&format=png"
+              alt=""
+            />
             <a class="btn border-orange-200">Login</a>
             <a class="btn bg-bt-primary">Register</a>
           </div>
@@ -130,7 +159,7 @@
     </header>
 
     <!-- main -->
-    <main class=" md:mx-auto md:w-5/6">
+    <main class="md:mx-auto md:w-5/6">
       <section class="mt-14">
         <h1 class="text-4xl font-bold mb-10">Browse By Categories</h1>
         <!-- card container -->
@@ -237,7 +266,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -251,7 +284,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -265,7 +302,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -279,7 +320,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -293,7 +338,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -307,7 +356,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -321,7 +374,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -335,7 +392,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -349,7 +410,11 @@
               </div>
               <div>
                 <div class="flex">
-                  <img class="w-5" src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png" alt=""><span>4.5</span>
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=96&id=8ggStxqyboK5&format=png"
+                    alt=""
+                  /><span>4.5</span>
                 </div>
                 <h1>Pet Bed</h1>
                 <p>$39.99</p>
@@ -360,7 +425,7 @@
       </section>
 
       <!-- low price -->
-      <section>
+      <section class="">
         <h1 class="text-3xl font-bold m-6">Everyday low Price</h1>
         <div class="flex flex-col md:flex-row gap-2">
           <div class="flex justify-around bilai-1 items-center md:w-4/6">
@@ -387,11 +452,13 @@
       </section>
 
       <!-- Footer -->
+    </main>
+    <footer>
       <section
-        class="container mx-auto p-24 items-center flex flex-col md:flex-row justify-between bg-[#FFF9F4] mt-40"
+        class="md:w-5/6 mx-auto p-5 md:p-24 items-center flex flex-col md:flex-row justify-between bg-[#FFF9F4] rounded-3xl mt-40"
       >
         <div class="bilai">
-          <img src="c1-assets/cute-pet-mid.png" alt="" />
+          <img class="" src="c1-assets/cute-pet-mid.png" alt="" />
         </div>
         <div class="space-y-4">
           <h3 class="font-bold text-3xl">Get Pawsome News!</h3>
@@ -410,15 +477,14 @@
           </form>
         </div>
       </section>
-      <section class="bg-[#FFDC2680] flex flex-col md:flex-row justify-between h-[50]">
+
+      <section
+        class="bg-[#FFDC2680]/50 relative flex flex-col md:flex-row gap-4 md:justify-between min-h-64 p-5 md:p-24"
+      >
         <div>
-          <div>
-            <h3>
-              <img src="c1-assets/logo-footer.png" alt="" /> Browse<span
-                class="text-yellow-400"
-                >4</span
-              >Pets
-            </h3>
+          <div class="flex items-center">
+            <img src="c1-assets/logo-footer.png" alt="" />
+            <p>Browse <span class="text-yellow-400">4</span>Pets</p>
           </div>
           <p>
             Discover a world of treats, toys, and essentials handpicked for your
@@ -433,13 +499,29 @@
         <div>
           <p>Follow us</p>
           <div class="flex gap-2">
-            <img class="w-4" src="https://img.icons8.com/?size=100&id=118467&format=png" alt="">
-            <img class="w-4" src="https://img.icons8.com/?size=60&id=59813&format=png" alt="">
-            <img class="w-4" src="https://img.icons8.com/?size=100&id=8808&format=png" alt="">
-            <img class="w-4" src="https://img.icons8.com/?size=60&id=62852&format=png" alt="">
+            <img
+              class="w-4"
+              src="https://img.icons8.com/?size=100&id=118467&format=png"
+              alt=""
+            />
+            <img
+              class="w-4"
+              src="https://img.icons8.com/?size=60&id=59813&format=png"
+              alt=""
+            />
+            <img
+              class="w-4"
+              src="https://img.icons8.com/?size=100&id=8808&format=png"
+              alt=""
+            />
+            <img
+              class="w-4"
+              src="https://img.icons8.com/?size=60&id=62852&format=png"
+              alt=""
+            />
           </div>
         </div>
       </section>
-    </main>
+    </footer>
   </body>
 </html>
